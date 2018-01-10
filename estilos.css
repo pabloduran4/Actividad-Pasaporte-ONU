@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+body{
+    background-color: #AADDF3;
+	min-width: 700px;
+    width: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+#rectangulo{
+	background-color: #4272B6;
+  text-align: center;
+  color: white;
+  height: 45px;
+    width: 100%;
+    padding-top: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+
+#instruccion{
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#titulo{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3rem;
+}
+
+/*-------------------------formulario-----------------------------*/
+#opciones{
+    font-family:'Lato';
+    width: 20%;
+   font-size: 1.1rem;
+    z-index: 2;
+    position: absolute;
+    top:420px;
+    left: 50%;
+    min-width: 200px;
+}
+
+#opciones2,#opciones3,#opciones4,#opciones5,#opciones6,#opciones7,#opciones8,#opciones9,#opciones10{
+    font-family:'Lato';
+    width: 20%;
+   font-size: 1.1rem;
+    z-index: 2;
+    position: absolute;
+    top:420px;
+    left: 50%;
+    min-width: 200px;
+    display: none;
+}
+
+
+
+/*-------------frase1------------*/
+#frase1{
+    margin:  0 auto;
+	width: 750px;
+    flex-grow: 1;
+}
+
+/*--------------sellos------------------*/
+#aprovado{
+    width: 300px;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+	display: none;
+    z-index: 2;
+}
+
+#desaprovado{
+    width: 300px;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+	display: none;
+    z-index: 2;
+}
+/*--------------sellos------------------*/
+
+#siguiente,#siguiente2,#siguiente3,#siguiente4,#siguiente5,#siguiente6,#siguiente7,#siguiente8,#siguiente9,#siguiente10{
+    width: 250px;
+    margin: 0 auto;
+    margin-left: 52%;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: -90px;
+}
+
+#ganar{
+	width: 500px;
+    height: 380px;
+	display: block;
+   z-index: 10;
+    flex-grow: 8;
+}
+
+#cerrar{
+width: 25px;
+    cursor: pointer;
+  z-index: 11;
+ display: block;
+    flex-grow: 1;
+}
+
+#cerrar2{
+width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    cursor: pointer;
+  z-index: 11;
+ display: block;
+}
+
+#contenedorFelicitaciones{
+	width: 700px;
+    position: absolute;
+    top: 250px;
+    left: 37%;
+	display: none;
+    flex-direction: row;
+   z-index: 10;
+}
+
+@media only screen and (max-width: 361px) {
+    #opciones,#opciones2,#opciones3,#opciones4,#opciones5,#opciones6,#opciones7,#opciones8,#opciones9,#opciones10 {
+        top:900px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #opciones,#opciones2,#opciones3,#opciones4,#opciones5,#opciones6,#opciones7,#opciones8,#opciones9,#opciones10 {
+        left:380px;
+    }
+    
+    #desaprovado, #aprovado{
+        left: 380px;
+    }
+    
+    #cerrar2{
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #contenedorFelicitaciones{
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #contenedorFelicitaciones{
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #contenedorFelicitaciones{
+        left: 5%;
+    }
+}
